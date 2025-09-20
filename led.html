@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvanSendpie - LED</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <div class="layouts">
+        <section class="navbar">
+            <h3>EvanSendpie's Smart Home</h3>
+        </section>
+        <section class="page-title">
+            <h3>LED CONTROL</h3>
+        </section>
+        <section class="leds">
+            <div class="led">
+                <img src = "assets/led-off.png" class="led-image" id="ledSatuImage"/>
+                <p class="led-text">LED 1</p>
+                <button class ="led-submit" id="ledSatu" onclick="set1LED()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src = "assets/led-off.png" class="led-image" id="ledDuaImage"/>
+                <p class="led-text">LED 2</p>
+                <button class ="led-submit" id="ledDua" onclick="set2LED()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src = "assets/led-off.png" class="led-image" id="ledTigaImage"/>
+                <p class="led-text">LED 3</p>
+                <button class ="led-submit" id="ledTiga" onclick="set3LED()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src = "assets/led-off.png" class="led-image" id="ledEmpatImage"/>
+                <p class="led-text">LED 4</p>
+               <button class ="led-submit" id="ledEmpat" onclick="set4LED()">TURN ON</button>
+            </div>
+            
+            
+        </section>
+        <section class="bottombar">
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-home"></i></a></li>
+                <li><a href="/led.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-wrench"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
